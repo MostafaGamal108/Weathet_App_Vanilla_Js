@@ -22,19 +22,16 @@ export const clearText = (text) => {
 };
 
 export const getCoordsFromApi = async (entryTxt, unit) => {
-
   const urlDataObj = {
-    entryTxt:entryTxt,
-    unit:unit
-  }
+    entryTxt: entryTxt,
+    unit: unit,
+  };
 
   try {
-    const coordsStream = await fetch("./.netlify/functions/coordsAPI")
+    const coordsStream = await fetch("./.netlify/functions/coordsAPI");
   } catch (err) {
-    
+    console.error(err);
   }
-
-
 };
 
 export const getWeatherJsonFromCoords = async (currentLocClass) => {
@@ -45,13 +42,13 @@ export const getWeatherJsonFromCoords = async (currentLocClass) => {
   };
 
   try {
-    const weatherStream = await fetch("./netlify/functions/weatherJson",{
-      method:"POST",
-      body:JSON.stringify(urlDataObj)
-    })
-    const weatherJson = await weatherStream.json()
-    return weatherJson
-  }catch(err) {
-    console.error(err)
+    const weatherStream = await fetch("./netlify/functions/weatherJson", {
+      method: "POST",
+      body: JSON.stringify(urlDataObj),
+    });
+    const weatherJson = await weatherStream.json();
+    return weatherJson;
+  } catch (err) {
+    console.error(err);
   }
 };
