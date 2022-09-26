@@ -1,0 +1,22 @@
+.button {
+    min-width: 3rem;
+    min-height: 3rem;
+    color: $button-textcolor;
+    border: 1px solid $bordercolor;
+    border-radius: 80px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 900;
+    background-color: $button-color;
+    &:hover {
+        cursor: pointer;
+    }
+
+    &:hover,
+    &:focus {
+        box-shadow: 4px 2px 5px $text-shadow-color;
+        border-color: $font-color;
+    }
+
+
+}

@@ -1,0 +1,18 @@
+.dailyForecast{ 
+    .dailyForecast__contents {
+        @include flexCenter(row);
+        justify-content: space-evenly;
+        color: $fadecolor;
+        padding: .5rem 0;
+
+        .forecastDay {
+            @include flexCenter(column);
+            justify-content: space-evenly;
+            font-size: .9rem;
+
+            @include mq(375px) {
+                font-size: 1rem;
+            }
+        }
+    }
+}

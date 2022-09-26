@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  @include mq(768px) {
+    font-size: 22px;
+  }
+}
+
+body {
+  background-color: $background-color;
+  background-blend-mode: overlay;
+  background-image: url("../../dist/imgs/sonny-mauricio-kIr8e-01eAw-unsplash.jpg");
+  background-position: center;
+  background-size:cover;
+  width: 100%;
+  min-height: 100vh;
+  @include flexCenter(column);
+  padding: 0.5rem;
+}
+main {
+  width: 100%;
+  max-width: 700px;
+  max-height: 1050px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: $font-color;
+  background-color: $mask-color;
+  border: 1px solid $bordercolor;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2.5px $shadowcolor;
+}
+img {
+  display: block;
+}
+
+hr {
+  width: 90%;
+  margin: 1.5rem auto;
+  border: .5px solid $bordercolor;
+  @include mq(768px) {
+  margin: auto;
+  }
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.error {
+  animation-name: error;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+}
+
+@keyframes error {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: transparent;
+  }
+}

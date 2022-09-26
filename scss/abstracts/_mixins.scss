@@ -1,0 +1,19 @@
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin mq($size) {
+  @media only screen and (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin mqh($size) {
+  @media only screen and (min-height: $size) {
+    @content;
+  }
+}
+

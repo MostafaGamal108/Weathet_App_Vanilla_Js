@@ -1,0 +1,51 @@
+.searchBar {
+  padding: 0.5rem 0.5rem 2rem;
+
+  .searchBar__form {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid $bordercolor;
+    border-radius: 500px;
+
+    &:focus-within,
+    &:hover {
+      box-shadow: 4px 2px 5px $text-shadow-color;
+    }
+  }
+
+  .searchBar__text {
+    flex-grow: 1;
+    width: calc(100% - 3.2rem);
+    padding: 0.75rem 0 0.75rem 0.75rem;
+    margin-right: 0.25rem;
+    outline: none;
+    border: none;
+    background-color: $button-color;
+    color: $font-color;
+    font-size: 1.25rem;
+    &::placeholder {
+      color: $fadecolor;
+    }
+  }
+
+  .searchBar__button {
+    border: none;
+
+    i {
+      font-size: 1.7rem;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      text-shadow: 4px 2px 5px $text-shadow-color;
+      i {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  @include mq(768px) {
+  padding: 0.5rem 0.5rem .5rem;
+  }
+}

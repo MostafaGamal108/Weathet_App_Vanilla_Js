@@ -1,0 +1,20 @@
+// _a11y.scss  is a Commen name for the accessibilty
+.offscreen {
+    position: absolute;
+    left: -10000px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -999px;
+    left: 0;
+    background-color: $text-shadow-color;
+    color: $font-color;
+    padding: 14px;
+    z-index: 1;
+    &:hover,
+    &:focus {
+        top: auto;
+        left: auto;
+    }
+}
