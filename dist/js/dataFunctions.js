@@ -1,3 +1,5 @@
+import { error } from "console";
+import { json } from "stream/consumers";
 
 export const setLocationObj = (currentLocClass, myCoordsObj) => {
   const { lat, lon, name, unit } = myCoordsObj;
@@ -20,29 +22,36 @@ export const clearText = (text) => {
 };
 
 export const getCoordsFromApi = async (entryTxt, unit) => {
-  const regex = /^\d+$/g;
-  const flag = regex.test(entryTxt) ? "zip" : "q";
-  const url = `https://api.openweathermap.org/data/2.5/weather?${flag}=${entryTxt}&units=${unit}&appid=${API_key}`;
-  try {
-    const dataArr = await fetch(url);
-    const jsonData = await dataArr.json();
-    return jsonData;
-  } catch (error) {
-    console.error(error);
+
+  const urlDataObj = {
+    entryTxt:entryTxt,
+    unit:unit
   }
+
+  try {
+    const coordsStream = await fetch("./.netlify/functions/coordsAPI")
+  } catch (err) {
+    
+  }
+
+
 };
 
 export const getWeatherJsonFromCoords = async (currentLocClass) => {
-  const lat = currentLocClass.getLat();
-  const lon = currentLocClass.getLon();
-  const unit = currentLocClass.getUnit();
-  const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly,alerts&units=${unit}&appid=${API_key}
-  `;
+  const urlDataObj = {
+    lat: currentLocClass.getLat(),
+    lon: currentLocClass.getLon(),
+    unit: currentLocClass.getUnit(),
+  };
+
   try {
-    const fetchUrl = await fetch(url);
-    const fetchUrlJson = await fetchUrl.json();
-    return fetchUrlJson;
-  } catch (error) {
-    console.error(error);
+    const weatherStream = await fetch("./netlify/functions/weatherJson",{
+      method:"POST",
+      body:JSON.stringify(urlDataObj)
+    })
+    const weatherJson = await weatherStream.json()
+    return weatherJson
+  }catch(err) {
+    console.error(err)
   }
 };

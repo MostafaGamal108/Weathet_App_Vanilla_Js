@@ -1,0 +1,23 @@
+{
+  "name": "advanced-weathe-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MostafaGamal108/Weathet_App_Vanilla_Js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MostafaGamal108/Weathet_App_Vanilla_Js/issues"
+  },
+  "homepage": "https://github.com/MostafaGamal108/Weathet_App_Vanilla_Js#readme",
+  "dependencies": {
+    "node-fetch": "^3.2.10"
+  }
+}
