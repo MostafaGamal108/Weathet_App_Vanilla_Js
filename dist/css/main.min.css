@@ -1,1 +1,349 @@
-*{margin:0;padding:0;box-sizing:border-box}html{font-size:16px;font-family:"Montserrat",sans-serif;font-weight:bold;letter-spacing:1px}@media only screen and (min-width: 768px){html{font-size:22px}}body{background-color:rgba(0,0,255,.5);background-blend-mode:overlay;background-image:url("../../imgs/sonny-mauricio-kIr8e-01eAw-unsplash.jpg");background-position:center;background-size:cover;width:100%;min-height:100vh;display:flex;justify-content:center;align-items:center;flex-direction:column;padding:.5rem}main{width:100%;max-width:700px;max-height:1050px;display:flex;flex-direction:column;flex-grow:1;color:#fff;background-color:rgba(0,0,0,.1);border:1px solid #d3d3d3;border-radius:10px;box-shadow:1px 1px 2.5px #fff}img{display:block}hr{width:90%;margin:1.5rem;border:.5px solid #d3d3d3}@media only screen and (min-width: 768px){hr{margin:auto}}.none{display:none}.block{display:block}.error{animation-name:error;animation-duration:3s;animation-iteration-count:2}@keyframes error{0%{background-color:red}100%{background-color:rgba(0,0,0,0)}}.offscreen{position:absolute;left:-10000px}.skip-link{position:absolute;top:-999px;left:0;background-color:#000;color:#fff;padding:14px;z-index:1}.skip-link:hover,.skip-link:focus{top:auto;left:auto}.button{min-width:3rem;min-height:3rem;color:#fff;border:1px solid #d3d3d3;border-radius:80px;outline:none;font-size:1rem;font-weight:900;background-color:rgba(0,0,0,0)}.button:hover{cursor:pointer}.button:hover,.button:focus{box-shadow:4px 2px 5px #000;border-color:#fff}.zero-vis{opacity:0;visibility:hidden}.fade-in{visibility:visible;opacity:1;animation-name:fadeInOpacity;animation-duration:1.5s;animation-iteration-count:1;animation-timing-function:ease-in}@keyframes fadeInOpacity{0%{opacity:0}100%{opacity:1}}.searchBar{padding:.5rem .5rem 2rem}.searchBar .searchBar__form{display:flex;justify-content:space-between;border:2px solid #d3d3d3;border-radius:500px}.searchBar .searchBar__form:focus-within,.searchBar .searchBar__form:hover{box-shadow:4px 2px 5px #000}.searchBar .searchBar__text{flex-grow:1;width:calc(100% - 3.2rem);padding:.75rem 0 .75rem .75rem;margin-right:.25rem;outline:none;border:none;background-color:rgba(0,0,0,0);color:#fff;font-size:1.25rem}.searchBar .searchBar__text::placeholder{color:rgba(255,255,255,.6)}.searchBar .searchBar__button{border:none}.searchBar .searchBar__button i{font-size:1.7rem}.searchBar .searchBar__button:hover,.searchBar .searchBar__button:focus{box-shadow:none;text-shadow:4px 2px 5px #000}.searchBar .searchBar__button:hover i,.searchBar .searchBar__button:focus i{font-size:2rem}@media only screen and (min-width: 768px){.searchBar{padding:.5rem .5rem .5rem}}.navButtons{display:flex;justify-content:space-around;padding:0 .25rem .5rem}.currenForecast{height:100%;flex-grow:1}.currenForecast .currenForecast__location{font-size:1rem;text-align:center;margin-bottom:1rem}@media only screen and (min-width: 768px){.currenForecast .currenForecast__location{margin-bottom:.5rem}}.currenForecast .currenForecast__conditions{width:100%;height:100%;font-size:1.1rem;margin:auto auto 1rem;display:grid}.currenForecast .currenForecast__conditions .temp{position:relative;display:flex;justify-content:center;align-items:center;flex-direction:row;font-size:6rem;grid-row:1/span 3;grid-column:1/span 2}.currenForecast .currenForecast__conditions .temp .unit{position:absolute;left:85%;top:55%;font-size:1.5rem;color:rgba(255,255,255,.6)}@media only screen and (min-width: 768px){.currenForecast .currenForecast__conditions .temp .unit{left:75%}}.currenForecast .currenForecast__conditions .icon{display:flex;justify-content:center;align-items:center;flex-direction:row;grid-row:1/span 1;grid-column:3/span 2}.currenForecast .currenForecast__conditions .icon i{font-size:2rem;text-shadow:1px 0px 5px #000}@media only screen and (min-width: 768px){.currenForecast .currenForecast__conditions .icon i{font-size:2.5rem}}.currenForecast .currenForecast__conditions .maxtemp{display:flex;justify-content:center;align-items:center;flex-direction:row;grid-row:2/span 1;grid-column:3/span 2}.currenForecast .currenForecast__conditions .mintemp{display:flex;justify-content:center;align-items:center;flex-direction:row;grid-row:3/span 1;grid-column:3/span 2;color:rgba(255,255,255,.6)}.currenForecast .currenForecast__conditions .desc{display:flex;justify-content:center;align-items:center;flex-direction:row;padding-top:.5rem;grid-row:4/span 1;grid-column:1/span 4}@media only screen and (min-height: 650px)and (min-width: 1024px){.currenForecast .currenForecast__conditions .desc{margin-top:1rem}}.currenForecast .currenForecast__conditions .feels{display:flex;justify-content:center;align-items:center;flex-direction:row;padding-top:.5rem;grid-row:5/span 1;grid-column:1/span 4;font-weight:normal}.currenForecast .currenForecast__conditions .humidity{display:flex;justify-content:center;align-items:center;flex-direction:row;padding-top:.5rem;grid-row:6/span 1;grid-column:1/span 4;color:rgba(255,255,255,.6);font-weight:normal}.currenForecast .currenForecast__conditions .wind{display:flex;justify-content:center;align-items:center;flex-direction:row;padding-top:.5rem;grid-row:7/span 1;grid-column:1/span 4;color:rgba(255,255,255,.6);font-weight:normal}.dailyForecast .dailyForecast__contents{display:flex;justify-content:center;align-items:center;flex-direction:row;justify-content:space-evenly;color:rgba(255,255,255,.6);padding:.5rem 0}.dailyForecast .dailyForecast__contents .forecastDay{display:flex;justify-content:center;align-items:center;flex-direction:column;justify-content:space-evenly;font-size:.9rem}@media only screen and (min-width: 375px){.dailyForecast .dailyForecast__contents .forecastDay{font-size:1rem}}.rain{background-color:rgba(0,0,255,.5);background-image:url("../../imgs/mehmet-ali-turan-qPcoYUEw1Jk-unsplash.jpg")}.fog{background-color:#2f4f4f;background-image:url("../../imgs/jaccob-mckay-bmgc2yQib6Q-unsplash.jpg.")}.night{background-color:rgba(204,0,102,.145);background-image:url("../../imgs/milan-ihl-ZW4QPK9e8_o-unsplash.jpg")}.clouds{background-color:rgba(0,0,255,.5);background-image:url("../../imgs/sonny-mauricio-kIr8e-01eAw-unsplash.jpg")}.snow{background-color:rgba(0,0,255,.5);background-image:url("../../imgs/andre-benz-Ygum7h8N4Wk-unsplash.jpg")}/*# sourceMappingURL=main.min.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 22px;
+  }
+}
+body {
+  background-color: rgba(0, 0, 255, 0.5);
+  background-blend-mode: overlay;
+  background-image: url("../../imgs/sonny-mauricio-kIr8e-01eAw-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+main {
+  width: 100%;
+  max-width: 700px;
+  max-height: 1050px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  box-shadow: 1px 1px 2.5px #fff;
+}
+img {
+  display: block;
+}
+hr {
+  width: 90%;
+  margin: 1.5rem;
+  border: 0.5px solid #d3d3d3;
+}
+@media only screen and (min-width: 768px) {
+  hr {
+    margin: auto;
+  }
+}
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
+.error {
+  animation-name: error;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+}
+@keyframes error {
+  0% {
+    background-color: red;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+.skip-link {
+  position: absolute;
+  top: -999px;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 14px;
+  z-index: 1;
+}
+.skip-link:hover,
+.skip-link:focus {
+  top: auto;
+  left: auto;
+}
+.button {
+  min-width: 3rem;
+  min-height: 3rem;
+  color: #fff;
+  border: 1px solid #d3d3d3;
+  border-radius: 80px;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 900;
+  background-color: rgba(0, 0, 0, 0);
+}
+.button:hover {
+  cursor: pointer;
+}
+.button:hover,
+.button:focus {
+  box-shadow: 4px 2px 5px #000;
+  border-color: #fff;
+}
+.zero-vis {
+  opacity: 0;
+  visibility: hidden;
+}
+.fade-in {
+  visibility: visible;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.searchBar {
+  padding: 0.5rem 0.5rem 2rem;
+}
+.searchBar .searchBar__form {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #d3d3d3;
+  border-radius: 500px;
+}
+.searchBar .searchBar__form:focus-within,
+.searchBar .searchBar__form:hover {
+  box-shadow: 4px 2px 5px #000;
+}
+.searchBar .searchBar__text {
+  flex-grow: 1;
+  width: calc(100% - 3.2rem);
+  padding: 0.75rem 0 0.75rem 0.75rem;
+  margin-right: 0.25rem;
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  font-size: 1.25rem;
+}
+.searchBar .searchBar__text::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.searchBar .searchBar__button {
+  border: none;
+}
+.searchBar .searchBar__button i {
+  font-size: 1.7rem;
+}
+.searchBar .searchBar__button:hover,
+.searchBar .searchBar__button:focus {
+  box-shadow: none;
+  text-shadow: 4px 2px 5px #000;
+}
+.searchBar .searchBar__button:hover i,
+.searchBar .searchBar__button:focus i {
+  font-size: 2rem;
+}
+@media only screen and (min-width: 768px) {
+  .searchBar {
+    padding: 0.5rem 0.5rem 0.5rem;
+  }
+}
+.navButtons {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0.25rem 0.5rem;
+}
+.currenForecast {
+  height: 100%;
+  flex-grow: 1;
+}
+.currenForecast .currenForecast__location {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 768px) {
+  .currenForecast .currenForecast__location {
+    margin-bottom: 0.5rem;
+  }
+}
+.currenForecast .currenForecast__conditions {
+  width: 100%;
+  height: 100%;
+  font-size: 1.1rem;
+  margin: auto auto 1rem;
+  display: grid;
+}
+.currenForecast .currenForecast__conditions .temp {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 6rem;
+  grid-row: 1 / span 3;
+  grid-column: 1 / span 2;
+}
+.currenForecast .currenForecast__conditions .temp .unit {
+  position: absolute;
+  left: 85%;
+  top: 55%;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media only screen and (min-width: 768px) {
+  .currenForecast .currenForecast__conditions .temp .unit {
+    left: 75%;
+  }
+}
+.currenForecast .currenForecast__conditions .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  grid-row: 1 / span 1;
+  grid-column: 3 / span 2;
+}
+.currenForecast .currenForecast__conditions .icon i {
+  font-size: 2rem;
+  text-shadow: 1px 0px 5px #000;
+}
+@media only screen and (min-width: 768px) {
+  .currenForecast .currenForecast__conditions .icon i {
+    font-size: 2.5rem;
+  }
+}
+.currenForecast .currenForecast__conditions .maxtemp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  grid-row: 2 / span 1;
+  grid-column: 3 / span 2;
+}
+.currenForecast .currenForecast__conditions .mintemp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  grid-row: 3 / span 1;
+  grid-column: 3 / span 2;
+  color: rgba(255, 255, 255, 0.6);
+}
+.currenForecast .currenForecast__conditions .desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 0.5rem;
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 4;
+}
+@media only screen and (min-height: 650px) and (min-width: 1024px) {
+  .currenForecast .currenForecast__conditions .desc {
+    margin-top: 1rem;
+  }
+}
+.currenForecast .currenForecast__conditions .feels {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 0.5rem;
+  grid-row: 5 / span 1;
+  grid-column: 1 / span 4;
+  font-weight: normal;
+}
+.currenForecast .currenForecast__conditions .humidity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 0.5rem;
+  grid-row: 6 / span 1;
+  grid-column: 1 / span 4;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+}
+.currenForecast .currenForecast__conditions .wind {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 0.5rem;
+  grid-row: 7 / span 1;
+  grid-column: 1 / span 4;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: normal;
+}
+.dailyForecast .dailyForecast__contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0.5rem 0;
+}
+.dailyForecast .dailyForecast__contents .forecastDay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-size: 0.9rem;
+}
+@media only screen and (min-width: 375px) {
+  .dailyForecast .dailyForecast__contents .forecastDay {
+    font-size: 1rem;
+  }
+}
+.rain {
+  background-color: rgba(0, 0, 255, 0.5);
+  background-image: url("../../imgs/mehmet-ali-turan-qPcoYUEw1Jk-unsplash.jpg");
+}
+.fog {
+  background-color: #2f4f4f;
+  background-image: url("../../imgs/jaccob-mckay-bmgc2yQib6Q-unsplash.jpg.");
+}
+.night {
+  background-color: rgba(204, 0, 102, 0.145);
+  background-image: url("../../imgs/milan-ihl-ZW4QPK9e8_o-unsplash.jpg");
+}
+.clouds {
+  background-color: rgba(0, 0, 255, 0.5);
+  background-image: url("../../imgs/sonny-mauricio-kIr8e-01eAw-unsplash.jpg");
+}
+.snow {
+  background-color: rgba(0, 0, 255, 0.5);
+  background-image: url("../../imgs/andre-benz-Ygum7h8N4Wk-unsplash.jpg");
+} /*# sourceMappingURL=main.min.css.map */
